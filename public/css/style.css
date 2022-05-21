@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9FF;
+}
+
+/* Haut de la page */
+
+.top_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 40%;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 320%;
+    margin-bottom: 30px;
+}
+
+.title h4 {
+    text-align: center;
+    font-size: 130%;
+}
+
+.bg {
+    width: 100%;
+}
+
+/* Première partie de la page */
+
+.first_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 80px 0;
+}
+
+.title_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 50%;
+}
+
+.title_part h2 {
+    text-align: center;
+    font-size: 320%;
+    margin-bottom: 30px;
+}
+
+.title_part h4 {
+    text-align: center;
+    font-size: 130%;
+    color: #707070;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 37px #0000000D;
+}
+
+.img_card {
+    width: 60%;
+}
