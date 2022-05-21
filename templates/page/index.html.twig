@@ -1,6 +1,32 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {# Navigation bar #}
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="{{ path('index') }}" class="index"><i class="fa-solid fa-house"></i> Apps <span>Market</span></a></h1>
+            </div>
+
+            <div id="nav" class="respon">
+                <ul>
+                    <li><a href="{{ path('index') }}" class="text_nav">Home</a></li>
+                    <li class="text_nav">Service Us</li>
+                    <li class="text_nav">Why Us</li>
+                    <li class="text_nav">Our Goals</li>
+                    <li class="text_nav">Our Portfolio</li>
+                    <li class="text_nav">Our Client</li>
+                    <li class="contact_us">Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="burger" id="toggle-button">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    {# Top de la page  #}
+
     <div class="top_page">
         <img src="{{ asset('img/Groupe 1758@2x.png') }}" class="bg">
 
@@ -10,7 +36,9 @@
         </div>
     </div>
 
-    <div class="first_part">
+    {# Première partie de la page #}
+
+    <div class="part">
         <div class="title_part">
             <h2>We provide various kind of service for you</h2>
             <h4>It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem</h4>
@@ -39,4 +67,143 @@
             </div>
         </div>
     </div>
+
+    {# Deuxième partie de la page #}
+
+    <div class="part">
+        <div class="title_part">
+            <h2>Why Us</h2>
+            <h4>It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem</h4>
+        </div>
+
+        <div class="representation_container">
+            <div class="representation_img">
+                <img src="{{ asset('img/style@2x.png') }}" class="representation_back">
+                <img src="{{ asset('img/iPhone X - Light@2x.png') }}" class="representation_front">
+            </div>
+
+            <div class="representation_text">
+                <h3>Built The App That Everyone Love.</h3>
+                <p>It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using Lorem Ipsum Is That It Has A More-Or-Less Normal Distribution Of Letters,</p>
+                <p>It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content Of A Page When Looking At Its Layout. The Point Of Using</p>
+                <button>Get More <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </div>
+    </div>
+
+    {# Troisième partie de la page #}
+
+    <div class="part">
+        <div class="title_part">
+            <h2>We Completed 1200+ Projects Yearly Successfully & Counting</h2>
+            <h4>It Is A Long Established Fact That A Reader Will Be Distracted By The Readable</h4>
+            <h4>It Is A Long Established Fact That</h4>
+        </div>
+
+        <div class="smallcard_container">
+            <div class="smallcard">
+                <i class="fa-solid fa-clipboard-check check"></i>
+
+                <div class="text_smallcard">
+                    <h4>100+</h4>
+                    <p>Active Projects</p>
+                </div>
+            </div>
+
+            <div class="smallcard">
+                <i class="fa-solid fa-users users"></i>
+                
+                <div class="text_smallcard">
+                    <h4>90+</h4>
+                    <p>Client Satisfed</p>
+                </div>
+            </div>
+
+            <div class="smallcard">
+                <i class="fa-solid fa-users users"></i>
+                
+                <div class="text_smallcard">
+                    <h4>56+</h4>
+                    <p>Country Available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# Partie de contact #}
+
+    <div class="contact_container">
+        <div class="contact">
+            <div class="text_contact">
+                <h4>Contact Us!</h4>
+                <p>There are many variations of passages of Lorem Ipsum but the majority have suffered alteration.</p>
+            </div>
+
+            <div class="input_contact">
+                <input type="text" class="input_text" placeholder="Email here">
+                <input type="submit" class="input_submit" value="Send">
+            </div>
+        </div>
+    </div>
+
+    {# Footer #}
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_card">
+                <img src="{{ asset('img/Groupe 50@2x.png') }}" class="img_footer">
+
+                <div class="reseaux_footer">
+                    <i class="fa-brands fa-facebook-f reseaux"></i>
+                    <i class="fa-brands fa-twitter reseaux"></i>
+                </div>
+            </div>
+
+            <div class="footer_card">
+                <h5>Links</h5>
+
+                <div class="footer_text">
+                    <p>Home</p>
+                    <p>Pricing</p>
+                    <p>Download</p>
+                    <p>About</p>
+                    <p>Service</p>
+                </div>
+            </div>
+
+            <div class="footer_card">
+                <h5>Support</h5>
+                
+                <div class="footer_text">
+                    <p>FAQ</p>
+                    <p>How it</p>
+                    <p>Features</p>
+                    <p>Contact</p>
+                    <p>Reporting</p>
+                </div>
+            </div>
+
+            <div class="footer_card">
+                <h5>Contact Us</h5>
+                
+                <div class="footer_text">
+                    <p>+880 12345678</p>
+                    <p>youremail@gmail.com</p>
+                    <p>Rangpur City</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_tags">
+            <p>Copyright & Design By @Md Riad Islam</p>
+
+            <div class="content_tags">
+                <p>Terms of use</p>
+                <div class="sepa"></div>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ asset('js/responsive.js') }}"></script>
 {% endblock %}
